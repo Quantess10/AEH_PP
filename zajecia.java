@@ -72,7 +72,9 @@ class excercises {
     // średnią ocen i określi odpowiedni stopień zaliczenia (np. "A", "B", "C"
     // itp.).
     public static void exercise5() {
-        int[] oceny = { 3, 5, 2, 4, 4, 3, 4 };
+
+        // A (>79% wiedzy), B (70–79%), C (60–69%), D (50–59%) i E (poniżej 49%)
+        int[] oceny = { 40, 81, 72, 54, 46, 38, 61 };
 
         int suma = 0;
         for (int liczba : oceny) {
@@ -81,6 +83,18 @@ class excercises {
 
         double srednia = (double) suma / oceny.length;
         System.out.println("Średnia: " + srednia);
+
+        if (srednia < 49) {
+            System.out.println("Twoja ocena to E");
+        } else if (srednia < 50) {
+            System.out.println("Twoja ocena to D");
+        } else if (srednia < 60) {
+            System.out.println("Twoja ocena to C");
+        } else if (srednia < 70) {
+            System.out.println("Twoja ocena to B");
+        } else if (srednia < 79) {
+            System.out.println("Twoja ocena to A");
+        }
     }
 
     // 6) Napisz program, który sprawdza, czy dane słowo jest palindromem. Link:
