@@ -74,4 +74,10 @@ class excercises {
     public static void exercise5() {
         int[] oceny = { 3, 5, 2, 4, 4, 3, 4 };
     }
+
+    // 6) Napisz program, który sprawdza, czy dane słowo jest palindromem. Link:
+    // https://pl.wikipedia.org/wiki/Palindrom
+    public static void exercise6() {
+
+    }
 }
