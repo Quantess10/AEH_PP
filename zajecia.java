@@ -73,6 +73,14 @@ class excercises {
     // itp.).
     public static void exercise5() {
         int[] oceny = { 3, 5, 2, 4, 4, 3, 4 };
+
+        int suma = 0;
+        for (int liczba : oceny) {
+            suma += liczba;
+        }
+
+        double srednia = (double) suma / oceny.length;
+        System.out.println("Średnia: " + srednia);
     }
 
     // 6) Napisz program, który sprawdza, czy dane słowo jest palindromem. Link:
