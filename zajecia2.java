@@ -1,10 +1,13 @@
 public class zajecia2 {
     public static void main(String[] args) {
-        System.out.println("test");
+        final int SUM = add(5, 3);
+        System.out.println(add(2, 24));
+        System.out.println(SUM);
+    }
 
-        String text = "remote: Resolving deltas: 100% (1/1), completed with 1 local object.";
-        text = "@$SDA@$ADAERR#RASDF";
+    private static int add(int a, int b) {
+        int sum = a + b;
 
-        System.out.println(text);
+        return sum;
     }
 }
