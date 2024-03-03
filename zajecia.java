@@ -113,9 +113,9 @@ class excercises {
         String slowo = "kajak";
 
         if (czyPalindrom(slowo)) {
-            System.out.println("Słowo \"" + slowo + "\" jest palindromem.");
+            System.out.println("Słowo " + slowo + " jest palindromem.");
         } else {
-            System.out.println("Słowo \"" + slowo + "\" nie jest palindromem.");
+            System.out.println("Słowo " + slowo + " nie jest palindromem.");
         }
     }
 
