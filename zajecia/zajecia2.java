@@ -6,6 +6,7 @@ public class zajecia2 {
     public static void main(String[] args) {
         ex1_1();
         ex1_2();
+        ex1_3();
     }
 
     // 1.1) Napisz funkcję, która przyjmuje tablicę i liczbę do znalezienia, a
@@ -67,4 +68,20 @@ public class zajecia2 {
 
     // 1.3) Napisz funkcję, która przyjmuje tablicę i liczbę, a następnie zlicza ile
     // razy ta liczba występuje w tablicy.
+    public static void ex1_3() {
+        int[] tab = { 1, 2, 3, 4, 5, 3, 2, 1, 3, 5, 4, 1, 3, 7, 9, 5, 3, 2, 1, 3, 3 };
+        int num = 3;
+        int zlicz = zliczPowtorzenia(tab, num);
+        System.out.println("Liczba " + num + " występuje " + zlicz + " razy w tablicy.");
+    }
+
+    public static int zliczPowtorzenia(int[] tab, int num) {
+        int zlicz = 0; // Inicjalizacja licznika
+        for (int element : tab) {
+            if (element == num) {
+                zlicz++;
+            }
+        }
+        return zlicz;
+    }
 }
