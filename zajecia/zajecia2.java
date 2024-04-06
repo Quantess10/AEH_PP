@@ -1,5 +1,3 @@
-//1.4) Napisz funkcję rekurencyjną, która oblicza sumę liczby całkowitej, dodając do niej wszystkie liczby od 1 do tej liczby. Link: https://pl.wikipedia.org/wiki/Rekurencja
-
 import java.util.ArrayList;
 
 public class zajecia2 {
@@ -7,6 +5,7 @@ public class zajecia2 {
         ex1_1();
         ex1_2();
         ex1_3();
+        ex1_4();
     }
 
     // 1.1) Napisz funkcję, która przyjmuje tablicę i liczbę do znalezienia, a
@@ -84,4 +83,21 @@ public class zajecia2 {
         }
         return zlicz;
     }
+
+    // 1.4) Napisz funkcję rekurencyjną, która oblicza sumę liczby całkowitej,
+    // dodając do niej wszystkie liczby od 1 do tej liczby. Link:
+    // https://pl.wikipedia.org/wiki/Rekurencja
+    public static void ex1_4() {
+        int n = 5;
+        System.out.println("Suma liczb od 1 do " + n + " wynosi: " + sum(n));
+    }
+
+    public static int sum(int n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return n + sum(n - 1);
+        }
+    }
+
 }
